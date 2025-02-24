@@ -125,4 +125,4 @@ app.post("/update", async (req, res) => {
   res.json({ success: true });
 });
 
-app.listen(process.env.PORT, () => console.log(`Сервер запущен на порту ${process.env.PORT}`));
+app.listen(process.env.PORT, "0.0.0.0", () => console.log(`Сервер запущен на порту ${process.env.PORT}`));
